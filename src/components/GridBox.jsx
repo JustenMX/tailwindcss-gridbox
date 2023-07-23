@@ -1,38 +1,19 @@
-import { useEffect, useState } from "react";
-import gameListApi from "../api/gameListApi";
-function GridBox() {
-  const [gameCards, setgameCards] = useState([]);
-  const gameListApiPath = `/games?key=9165d834ffc64009b09c43f0a1ed0f67&page=1&page_size=24`;
-
-  //   Upon load to push into component
-  useEffect(() => {
-    const fetchGameCards = async () => {
-      try {
-        const response = await gameListApi.get(gameListApiPath);
-        console.log(response.data);
-        setgameCards(response.data);
-      } catch (error) {
-        console.log(error);
-      }
-    };
-    fetchGameCards();
-  }, [gameListApiPath]);
-
-  // debug
-  console.log(gameCards);
-
+/* eslint-disable react/prop-types */
+function GridBox({ gameCards }) {
   return (
     <>
       {/* background colour */}
-      <div className="bg-black">
+      <div>
         {/* setting the margin and padding --- mx = margin left & right my = margin top & bottom etc */}
         <div className="p-4 sm:mx-32">
           {/* the white dashed border */}
+
           <div className="p-4 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
             {/* H1 html element for title */}
-            <h1 className="text-5xl font-semibold text-white mb-5">
+            <h1 className="text-4xl font-bold mb-5 bg-gradient-to-r from-blue-800 to-indigo-900 text-transparent bg-clip-text">
               Tailwind CSS Gridbox
             </h1>
+
             {/* setting up the grid -- according to screen size i control the number of columns */}
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-x-4 md:gap-x-6 gap-y-8">
               {/* .map() */}
