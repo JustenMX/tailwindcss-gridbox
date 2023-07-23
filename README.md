@@ -1,4 +1,4 @@
-# Vite + Tailwind CSS Grid Box Project
+# Vite + Tailwind CSS Grid Box
 
 This repository showcases how to set up a grid box with multiple card containers using Vite and Tailwind CSS. The project also demonstrates how to fetch data from an API and dynamically render the card containers using the JavaScript `.map()` method.
 
@@ -6,7 +6,7 @@ This repository showcases how to set up a grid box with multiple card containers
 
 - Vite: Vite is a build tool that provides a faster and more streamlined development experience for modern web projects.
 - Tailwind CSS: Tailwind CSS is a utility-first CSS framework that makes it easy to build custom and responsive user interfaces.
-- JavaScript: JavaScript is used for fetching data from the API and dynamically rendering the card containers.
+- JavaScript & Axios: JavaScript & Axios is used for fetching data from the API and dynamically rendering the card containers.
 
 ## Project Overview
 
@@ -26,4 +26,7 @@ To get started with this project, follow these steps:
 With this project, you'll learn how to set up a grid box layout using Vite and Tailwind CSS, fetch data from an external API, and dynamically render card containers. It's a great starting point for building responsive and data-driven web applications.
 
 Happy coding!
-# tailwindcss-gridbox
+
+---
+
+> For further reference, you can also check out my other project, [Gamex](https://github.com/JustenMX/gamex) available on GitHub.
